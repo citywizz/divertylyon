@@ -1,0 +1,229 @@
+/**
+Diverty Lyon CSS
+* Mise à jour le : 
+* Auteur : élève
+========
+*/
+ 
+/**
+Modèle de boîtes
+*/
+ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* border: 1px solid grey; */
+  margin:0;
+  padding:0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color:#212121;
+    background: linear-gradient(#FFFFFF,#2c2c54);
+    min-height:100vh;
+}
+
+.logo_brand, h1{
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.logo_brand{
+    font-size:2em;
+}
+
+
+header, main{
+    clear:both;
+}
+
+
+/**
+Header
+*/
+
+header{
+    min-height:10vh;
+}
+
+header .logo_brand{
+    float:left;
+    margin: 0.2em 0 0 0.5em;
+}
+
+header .nav_main{
+    float:right;
+    margin: 0.8em 1em 0 0;
+}
+
+
+/** main
+Main content
+**/
+
+main{
+    margin:1em;
+    position:relative;
+}
+
+
+main h1#page-title{
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute!important;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+    clip: rect(1px,1px,1px,1px);
+    position:absolute;
+    z-index:2;
+}
+
+
+/** main menu
+Main menu
+**/
+
+nav ul li{
+    display:inline-block;
+
+}
+
+
+nav ul li:not(:last-child){
+    margin-right:0.5em;
+
+}
+
+
+nav ul li a{
+    text-decoration:none;
+}
+
+
+nav ul li a:link{
+    color:#957DAD;
+}
+
+nav ul li a:visited{
+    color:#E0BBE4;
+}
+
+nav ul li a:focus{
+    color:#212121;
+}
+
+nav ul li a:hover{
+    color:#D291BC;
+}
+
+nav ul li a:active{
+    color:#FEC8D8;
+
+}
+
+/**
+Elements généraux
+*/
+
+a {
+
+}
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:focus {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+
+li, p {
+    line-height: 1.5;
+}
+
+/**
+Logo
+*/
+
+
+.logo_brand a{
+    text-decoration:none;
+}
+
+.logo_brand a:visited{
+    text-decoration:#E0BBE4;
+}
+
+
+/**
+Promesse
+*/
+
+h2#promesse{
+    padding-top:2em;
+    word-break: break;
+    font-size:4em;
+    font-family: 'Dosis', sans-serif;
+    color:#FFF;
+    width:50vw;
+}
+
+h2>span{
+    display:block;
+    color:#E0BBE4;
+}
+
+/**
+SVG
+*/
+
+svg{
+    width:80%;
+    height:80%;
+}
+
+.svg{
+    margin-left:500px;
+    margin-top:-1000px;
+}
+
+
+#Dialog{
+
+    animation: 10s infinite linear dialog;
+
+}
+
+@keyframes dialog {
+      0% {
+        transform: scale(1);
+        opacity:0;
+      }
+      50% {
+        transform: scale(0.7) translate(-17px, 0px);
+        opacity:0.5;
+      }
+      100% {
+        transform: scale(1) translate(0,0);
+        opacity:1;
+      }
+ }
